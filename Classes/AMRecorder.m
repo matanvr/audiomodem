@@ -285,9 +285,9 @@ if (mean > 10e-5) {
         double time = (double)[[myWords objectAtIndex:0] doubleValue];
         double timestamp =(double) [[myWords objectAtIndex:1] doubleValue];
         double currentTimestamp = [[NSDate networkDate] timeIntervalSince1970];
-        
+        double moddedTimeStamp  = fmod(currentTimestamp,1000);
         double offset = currentTimestamp - timestamp + 1.;
-        double generatedTime = (double)(currentTimestamp - timestamp + time);
+        double generatedTime = (double)(moddedTimeStamp - timestamp + time);
         [player play];
         NSLog(@"Generated time is (%g/%g/%g)%g", currentTimestamp,timestamp, offset,  generatedTime);
         [player setCurrentTime:generatedTime ];
@@ -296,7 +296,7 @@ if (mean > 10e-5) {
 
 - (IBAction)recordMessage:(id)sender {
     if(!player){
-        NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:@"clocks"
+        NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:@"lean_on"
                                                                   ofType:@"mp3"];
         NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
         

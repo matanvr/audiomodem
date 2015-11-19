@@ -10,6 +10,7 @@
 		30C6173A1BE177BB00A0F639 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C617391BE177BB00A0F639 /* AVFoundation.framework */; };
 		30C6173C1BE178E300A0F639 /* clocks.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 30C6173B1BE178E300A0F639 /* clocks.mp3 */; };
 		30D1EA1C1BE73ABA0048BA9D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D1EA1B1BE73ABA0048BA9D /* QuartzCore.framework */; };
+		30D268F51BFDB3C400DD757B /* lean_on.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 30D268F41BFDB3C400DD757B /* lean_on.mp3 */; };
 		3C36C80816D6944700A94ADA /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C36C80716D6944700A94ADA /* Accelerate.framework */; };
 		3C3D270316A0284C00CEC756 /* AMRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D270216A0284C00CEC756 /* AMRecorder.m */; };
 		3C3D270616A0444200CEC756 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3D270516A0444200CEC756 /* AudioToolbox.framework */; };
@@ -29,6 +30,7 @@
 		30C617391BE177BB00A0F639 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AVFoundation.framework; sourceTree = "<group>"; };
 		30C6173B1BE178E300A0F639 /* clocks.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = clocks.mp3; sourceTree = SOURCE_ROOT; };
 		30D1EA1B1BE73ABA0048BA9D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QuartzCore.framework; sourceTree = "<group>"; };
+		30D268F41BFDB3C400DD757B /* lean_on.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = lean_on.mp3; path = ../../lean_on.mp3; sourceTree = "<group>"; };
 		3C36C80716D6944700A94ADA /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		3C3CAE8F16DCC30400B5E98C /* AudioModem-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AudioModem-Info.plist"; sourceTree = SOURCE_ROOT; };
 		3C3CAE9016DCC30400B5E98C /* AudioModem-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AudioModem-Prefix.pch"; sourceTree = SOURCE_ROOT; };
@@ -141,6 +143,7 @@
 		7A189F951535FD6800A22149 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				30D268F41BFDB3C400DD757B /* lean_on.mp3 */,
 				30C6173B1BE178E300A0F639 /* clocks.mp3 */,
 				3C3CAE8F16DCC30400B5E98C /* AudioModem-Info.plist */,
 				3C75C6C316B68E4100F85EC3 /* AMMainWindow.xib */,
@@ -235,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30D268F51BFDB3C400DD757B /* lean_on.mp3 in Resources */,
 				3C75C6C416B68E4100F85EC3 /* AMMainWindow.xib in Resources */,
 				30C6173C1BE178E300A0F639 /* clocks.mp3 in Resources */,
 			);

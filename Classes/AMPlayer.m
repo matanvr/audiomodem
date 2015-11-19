@@ -82,8 +82,8 @@ void HandleOutputBuffer(void * inUserData,
         _recordButton.enabled = YES;
     } else {
         double seconds = player.currentTime;
-        double timestamp = [[NSDate networkDate] timeIntervalSince1970];
-        self.messageTextView.text = [NSString stringWithFormat:@"%.2f-%.11f",seconds,timestamp ];
+        double timestamp = fmod([[NSDate networkDate] timeIntervalSince1970],1000);
+        self.messageTextView.text = [NSString stringWithFormat:@"%.2f-%.3f",seconds,timestamp ];
         
         printf("playing : \"%s\"\n", [self.messageTextView.text cStringUsingEncoding:NSASCIIStringEncoding]);
         [self play: self.messageTextView.text];
@@ -95,7 +95,7 @@ void HandleOutputBuffer(void * inUserData,
 - (void) playMusic {
     /* Use this code to play an audio file */
     if(!player){
-        NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:@"clocks"
+        NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:@"lean_on"
                                                                   ofType:@"mp3"];
         NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
         
